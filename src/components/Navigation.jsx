@@ -1,10 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
+/* import CountryChart from './page/CountryChart';
+import Player from './components/Player';
+import ScrollSection from './components/ScrollSection'; */
 import './Navigation.scss';
+/* import Home from '../page/Home';
+import Genre from '../page/Genre'; */
 
 const Navigation = () => {
   return (
-    <nav className="navigation">
+    <div className="navigation">
       <div className="nav-container">
         <div className="navigation-links">
 
@@ -22,17 +28,17 @@ const Navigation = () => {
               <div className="button-label">MOODIC?</div>
             </Link>
 
-            <Link to="/Genre.jsx" className="nav-link base">
+            <Link to="/genre" className="nav-link base">
               <div className="button-label">장르</div>
               <div className="nav-link-bg base"></div>
             </Link>
 
-            <Link to="/blue" className="nav-link makes">
+            <Link to="/country-chart" className="nav-link makes">
               <div className="button-label">Top100</div>
               <div className="nav-link-bg makes"></div>
             </Link>
 
-            <Link to="/green" className="nav-link skills">
+            <Link to="./Player" className="nav-link skills">
               <div className="button-label">MoodFlow</div>
               <div className="nav-link-bg skills"></div>
             </Link>
@@ -42,24 +48,25 @@ const Navigation = () => {
               <div className="nav-link-bg story"></div>
             </Link>
 
-            <Link to="/red" className="nav-link signal">
+            <Link to="/player" className="nav-link signal">
               <div className="button-label">마이페이지</div>
               <div className="nav-link-bg signal"></div>
             </Link>
 
-            <a
-              href="../page/Login.jsx"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link to='/login'
               className="nav-link cta mobile-hidden"
             >
               <div className="button-label">로그인</div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
-    </nav>
+    </div>
   );
+  
 };
+
+
+  
 
 export default Navigation;

@@ -1,5 +1,5 @@
 // moodic/src/components/Hero.jsx
-
+import {  } from "react-router-dom";
 import React from 'react';
 import './Hero.scss';
 
