@@ -22,7 +22,7 @@ const Navigation = () => {
               <div className="button-label">MOODIC?</div>
             </Link>
 
-            <Link to="/yellow" className="nav-link base">
+            <Link to="/Genre.jsx" className="nav-link base">
               <div className="button-label">장르</div>
               <div className="nav-link-bg base"></div>
             </Link>

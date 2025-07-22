@@ -42,7 +42,7 @@
   }
 
   .headline {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
@@ -55,6 +55,8 @@
     }
 
     .play-btn {
+      margin: 0 auto;
+      align-items: center;
       background-color: #78aaff;
       color: white;
       padding: 0.6rem 1.2rem;
@@ -74,7 +76,7 @@
   .circle-wrapper {
     position: relative;
     width: 800px;
-    height: 800px;
+    height: 1000px;
     margin: 0 auto;
     border-radius: 50%;
     animation: rotate 60s linear infinite;
@@ -85,8 +87,8 @@
       left: 50%;
       transform-origin: center;
       transition: transform 0.3s ease;
-      width: 120px;
-      height: 120px;
+      width: 150px;
+      height: 150px;
 
       img {
         width: 100%;
@@ -133,7 +135,7 @@
       }
     }
 
-    .circle-wrapper {
+    /* .circle-wrapper {
   position: relative;
   width: 800px;
   height: 800px;
@@ -159,10 +161,12 @@
       transition: transform 0.3s ease;
     }
   }
-}
+} */
 
     .selector {
       button {
+        margin: 0 auto;
+        align-items: center;
         font-size: 0.9rem;
         padding: 0.4rem 0.9rem;
       }
