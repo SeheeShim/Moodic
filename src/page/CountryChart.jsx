@@ -96,9 +96,13 @@ const CountryChart = () => {
               style={{
                 transform: `translate(${x}px, ${y}px) rotate(${angle}deg)`
               }}
-              whileHover={{ scale: 1.1 }}
             >
-              <img src={track.image} alt={track.name} />
+              <motion.img
+                src={track.image}
+                alt={track.name}
+                whileHover={{ scale: 1.15 }}
+                transition={{ duration: 0.3 }}
+              />
             </motion.a>
           );
         })}
